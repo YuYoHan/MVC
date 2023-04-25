@@ -1,4 +1,4 @@
-package com.example.servlet.basic.request;
+package com.example.servlet.basic.requset;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -19,7 +19,8 @@ import java.io.IOException;
 public class RequestParamServlet extends HttpServlet {
 
     @Override
-    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         log.info("[전체 파라미터 조회] - start");
         request.getParameterNames().asIterator()
                 // paramName : userName
